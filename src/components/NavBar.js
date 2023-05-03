@@ -1,5 +1,6 @@
 import  React from 'react'
-
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 export default function NavBar(){
 
 
@@ -7,9 +8,12 @@ export default function NavBar(){
 
 return(
 
-
-<h2>NavBar</h2>
-
+<BrowserRouter>
+<Route path="/" element={<home/>}/>
+<Route path="search" element={<Search/>}/>
+<Route path="contact" element={<>}/>
+<Route path="/" element={<home/>}/>
+</BrowserRouter>
 
 
 )
