@@ -12,7 +12,7 @@ function App() {
   return (
 
     <>
-    <div className="hero">
+    
     <nav>
     <img src="https://img.icons8.com/dusk/64/null/geography--v1.png" className="logo"/>
     <ul>
@@ -20,12 +20,11 @@ function App() {
   <li><NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/search">Search</NavLink></li>
   <li><NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/about">About</NavLink></li>
   <li><NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/contact">Contact</NavLink></li>
-
     </ul>
     <button></button>
     </nav>
     
-    </div>
+    
 
 
     <Routes>
