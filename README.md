@@ -1,4 +1,17 @@
 # InfoPilot
+## Description
+
+InfoPilot is a web application that provides a personal and guided search experience for users looking to find accurate and relevant 
+information on interested topics.
+InfoPilot fetches related articles from various sources using  <a href="https://newscatcherapi.com/">NewsCatcher API</a> and presents them to the user in an organized and user friendly format.
+
+## Technologies Used
+Languages used include: REACT library, javaScript, Bootstrap and Visual Studio Code.
+
+## Known Bugs
+
+## Support and contact details
+My contact is alvin47k@gmail.com suppose you come across any challenges or would like to give your feedback and suggestions.
 
 ## MIT License
 
