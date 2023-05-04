@@ -29,6 +29,14 @@ export  default function ContactUs(){
 
 <>
 
+<div style={{display:"flex"}}>
+<div id="contact-info" >
+
+<h1>How are you feeling today. <br/> Please feel free and share your thoughts or concerns with us</h1>
+
+
+</div>
+
 <div className="container  border border-primary rounded  p-3" id="form-container">
       <h2 className="mb-3">Contact US</h2>
 
@@ -68,13 +76,14 @@ export  default function ContactUs(){
           <label className="form-label" htmlFor="message">
             Message
           </label>
-          <textarea className="form-control" name="message" placeholder="Please feel free to write to us." required />
+          <textarea className="form-control" name="message" placeholder="Message" required />
         </div>
         <button id="danger" type="submit">
           {formStatus}
         </button>
     </form>
 
+    </div>
     </div>
     </>
   );

@@ -1,15 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./navbar.css";
 import { NavLink } from "react-router-dom";
 
 function NavBar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
+  useEffect(() => {
+    if (isNavExpanded) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isNavExpanded]);
+
   return (
     <nav className="navigation">
       <img
         src="https://img.icons8.com/dusk/64/null/geography--v1.png"
         className="brand-name"
+        alt="nav"
       />
       <button
         className="hamburger"
