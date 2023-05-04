@@ -3,7 +3,7 @@
 
 InfoPilot is a web application that provides a personal and guided search experience for users looking to find accurate and relevant 
 information on interested topics.
-InfoPilot fetches related articles from various sources and presents them to the user in an organized and user friendly format.
+InfoPilot fetches related articles from various sources using  <a href="https://newscatcherapi.com/">NewsCatcher API</a> and presents them to the user in an organized and user friendly format.
 
 ## MIT License
 
