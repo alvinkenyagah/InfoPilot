@@ -14,14 +14,14 @@ export  default function ContactUs(){
   const sendEmail = (e) => {
     
     e.preventDefault();
-
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    setFormStatus("Submitting...");
+    emailjs.sendForm('service_tfsl5gj', 'template_afwt2gf', form.current, 'qpxSDyA1PykJtbR_N')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
-      setFormStatus("Submitting...");
+      setFormStatus("Submitted");
      
   };
 
@@ -38,14 +38,14 @@ export  default function ContactUs(){
           <label className="form-label" htmlFor="name">
             Name
           </label>
-          <input className="form-control" type="text" name="user_name" required />
+          <input className="form-control" type="text" name="name" required />
         </div>
 
         <div className="mb-3">
           <label className="form-label" htmlFor="email">
             Email
           </label>
-          <input className="form-control" type="email" name="user_email" required />
+          <input className="form-control" type="email" name="email" required />
         </div>
 
         <div className="mb-3">
@@ -54,7 +54,7 @@ export  default function ContactUs(){
           </label>
 
 
-<input className="form-control" type="tel" name="user_phone" placeholder="+1234567890" required
+<input className="form-control" type="tel" name="phone" placeholder="+1234567890" required
        pattern="^\+(?:[0-9] ?){6,14}[0-9]$"
        title="Phone number must be in the format +1234567890"
         />
