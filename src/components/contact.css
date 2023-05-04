@@ -76,3 +76,17 @@
     transition: box-shadow 0.2s ease-in;
   }
   
+
+  #form-container {
+    background-color: #fbfdff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #form-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  

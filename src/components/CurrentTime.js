@@ -10,7 +10,7 @@ function CurrentTime() {
     return () => clearInterval(interval);
   }, []);
 
-  return <p>{currentTime}</p>;
+  return <h3>{currentTime}</h3>;
 }
 
 export default CurrentTime;

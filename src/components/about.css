@@ -1,0 +1,67 @@
+/* Main container for About Us section */
+.about-us-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  /* Headings */
+  .about-us-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-container h3 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  /* Team member container */
+  .team-members {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Team member card */
+  .team-member {
+    max-width: 350px;
+    margin-bottom: 20px;
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .team-member h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .team-member p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  /* Social media links */
+  .social-links {
+    margin-top: 40px;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .social-links a:hover {
+    color: #0077b5;
+  }
+  

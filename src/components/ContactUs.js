@@ -29,7 +29,7 @@ export  default function ContactUs(){
 
 <>
 
-<div className="container ml-9 border border-primary rounded w-25 p-3">
+<div className="container ml-9 border border-primary rounded w-25 p-3" id="form-container">
       <h2 className="mb-3">Contact US</h2>
 
 
@@ -38,14 +38,16 @@ export  default function ContactUs(){
           <label className="form-label" htmlFor="name">
             Name
           </label>
-          <input className="form-control" type="text" name="name" required />
+          <input className="form-control" type="text" name="name" placeholder="Full names" required
+          pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" title="Please enter your full names" />
         </div>
 
         <div className="mb-3">
           <label className="form-label" htmlFor="email">
             Email
           </label>
-          <input className="form-control" type="email" name="email" required />
+          <input className="form-control" type="email" name="email" placeholder="Email" required 
+          pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"/>
         </div>
 
         <div className="mb-3">
@@ -63,11 +65,11 @@ export  default function ContactUs(){
 
         </div>
 
-        <div className="mb-3">
+        <div className="mb-3" >
           <label className="form-label" htmlFor="message">
             Message
           </label>
-          <textarea className="form-control" name="message" required />
+          <textarea className="form-control" name="message" placeholder="Please feel free to write to us." required />
         </div>
         <button id="danger" type="submit">
           {formStatus}
