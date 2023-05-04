@@ -78,6 +78,9 @@
   
 
   #form-container {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #fbfdff;
     padding: 10px;
     border-radius: 5px;

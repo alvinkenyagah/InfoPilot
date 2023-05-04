@@ -6,7 +6,7 @@ import {Routes, Route} from "react-router-dom";
 import Search from "./components/Search";
 import About from "./components/AboutUs";
 import ContactForm from "./components/ContactUs";
-import NavBar from "./components/NavBa";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (

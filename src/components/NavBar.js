@@ -1,13 +1,13 @@
 import React from "react";
 import "./navbar.css"
-
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-// import CurrentTime from "./components/CurrentTime";
+
 
 
 function NavBar(){
 
-
+  const [isNavExpanded, setIsNavExpanded] = useState(false)
 
 
 return(
@@ -20,7 +20,13 @@ return(
 <nav className="navigation">
     <img src="https://img.icons8.com/dusk/64/null/geography--v1.png"  className="brand-name"/>
     <button className="hamburger" 
-      
+     
+
+      onClick={() => {
+          setIsNavExpanded(!isNavExpanded);
+        }}
+
+
     >
         {/* icon from heroicons.com */}
         <svg
@@ -46,7 +52,7 @@ return(
     </ul>
     
     </div>
-    {/* <CurrentTime/> */}
+  
     </nav>
 
 
