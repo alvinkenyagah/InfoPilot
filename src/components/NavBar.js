@@ -12,22 +12,16 @@ function NavBar(){
 
 return(
 
-<>
-
-
 
 
 <nav className="navigation">
     <img src="https://img.icons8.com/dusk/64/null/geography--v1.png"  className="brand-name"/>
-    <button className="hamburger" 
-     
-
-      onClick={() => {
-          setIsNavExpanded(!isNavExpanded);
+    <button
+        className="hamburger"
+        onClick={() => {
+          setIsNavExpanded(!isNavExpanded)
         }}
-
-
-    >
+      >
         {/* icon from heroicons.com */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +37,11 @@ return(
         </svg>
       </button>
 
-   <div   className="navigation-menu"> 
+      <div
+        className={
+          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        }
+      >
     <ul>
   <li><NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/">Home</NavLink></li>
   <li><NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/search">Search</NavLink></li>
@@ -60,7 +58,6 @@ return(
 
 
 
-</>
 
 
 
