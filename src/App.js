@@ -1,35 +1,18 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { NavLink, Routes, Route } from "react-router-dom";
+
 import Home from "./components/Home";
+import {Routes, Route} from "react-router-dom";
 import Search from "./components/Search";
 import About from "./components/AboutUs";
 import ContactForm from "./components/ContactUs";
-import CurrentTime from "./components/CurrentTime";
-
+import NavBar from "./components/NavBa";
 
 function App() {
-
-
-  
-
   return (
 
     <>
-    
-    <nav>
-    <img src="https://img.icons8.com/dusk/64/null/geography--v1.png" className="logo"/>
-    <ul>
-  <li><NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/">Home</NavLink></li>
-  <li><NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/search">Search</NavLink></li>
-  <li><NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/about">About</NavLink></li>
-  <li><NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/contact">Contact</NavLink></li>
-    </ul>
-    <CurrentTime/>
-    </nav>
-    
-    
-
+    <NavBar/>
 
     <Routes>
       <Route path="/" element={<Home />} />
@@ -37,8 +20,8 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<ContactForm />} />
     </Routes>
-    </>
+  </>
   );
 }
 
-export default App
+export default App;

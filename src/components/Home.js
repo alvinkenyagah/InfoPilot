@@ -1,10 +1,12 @@
 import React from "react";
 import "./home.css";
 import { Link } from "react-router-dom";
+import CurrentTime from "./CurrentTime";
 
 export default function Home() {
   return (
     <>
+<CurrentTime/>
       <div className="heading">
         <p>
           Welcome <br /> to InfoPilot
