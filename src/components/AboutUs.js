@@ -3,10 +3,12 @@ import "./about.css"
 const About = () => {
   return (
     <div>
+        <div id="about-mission">
       <h2>About Us</h2>
       <p>InfoPilot is a web application that provides a personal and guided search experience for users looking to find accurate and relevant information on interested topics.</p>
       <h3>Our Mission</h3>
       <p>Our mission is to empower users to easily find and access quality information on any topic, helping them make informed decisions and learn new things.</p>
+      </div>
       <h3>Our Team</h3>
       <div className="team-members">
         <div className="team-member">
