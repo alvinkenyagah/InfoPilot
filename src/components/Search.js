@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./search.css";
 
 function Search() {
   const [articles, setArticles] = useState([]);
@@ -93,12 +94,15 @@ function Search() {
         <label>
           Search query:
           <input
+        className="textInput"
             type="text"
             value={searchQuery}
             onChange={handleSearchChange}
           />
         </label>
-
+        <button type="submit">Search</button>
+<br/>
+<br/>
         <label>
           Topic:
           <select value={language} onChange={handleLanguageChange}>

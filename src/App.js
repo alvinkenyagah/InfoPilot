@@ -5,9 +5,13 @@ import Home from "./components/Home";
 import Search from "./components/Search";
 import About from "./components/AboutUs";
 import ContactForm from "./components/ContactUs";
+import CurrentTime from "./components/CurrentTime";
 
 
 function App() {
+
+
+  
 
   return (
 
@@ -21,7 +25,7 @@ function App() {
   <li><NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/about">About</NavLink></li>
   <li><NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/contact">Contact</NavLink></li>
     </ul>
-    <button></button>
+    <CurrentTime/>
     </nav>
     
     
