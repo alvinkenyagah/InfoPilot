@@ -1,25 +1,20 @@
-import React from "react";
-import "./navbar.css"
-import { useState } from "react";
+import React, { useState } from "react";
+import "./navbar.css";
 import { NavLink } from "react-router-dom";
 
+function NavBar() {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-
-function NavBar(){
-
-  const [isNavExpanded, setIsNavExpanded] = useState(false)
-
-
-return(
-
-
-
-<nav className="navigation">
-    <img src="https://img.icons8.com/dusk/64/null/geography--v1.png"  className="brand-name"/>
-    <button
+  return (
+    <nav className="navigation">
+      <img
+        src="https://img.icons8.com/dusk/64/null/geography--v1.png"
+        className="brand-name"
+      />
+      <button
         className="hamburger"
         onClick={() => {
-          setIsNavExpanded(!isNavExpanded)
+          setIsNavExpanded(!isNavExpanded);
         }}
       >
         {/* icon from heroicons.com */}
@@ -42,36 +37,55 @@ return(
           isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
         }
       >
-    <ul>
-  <li><NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/">Home</NavLink></li>
-  <li><NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/search">Search</NavLink></li>
-  <li><NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/about">About</NavLink></li>
-  <li><NavLink style={({isActive})=>(isActive ?{color:"red"}:{})} to="/contact">Contact</NavLink></li>
-    </ul>
-    
-    </div>
-  
+        <ul>
+          <li>
+            <NavLink
+              style={({ isActive }) => (isActive ? { color: "red" } : {})}
+              to="/"
+              onClick={() => {
+                setIsNavExpanded(false);
+              }}
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              style={({ isActive }) => (isActive ? { color: "red" } : {})}
+              to="/search"
+              onClick={() => {
+                setIsNavExpanded(false);
+              }}
+            >
+              Search
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              style={({ isActive }) => (isActive ? { color: "red" } : {})}
+              to="/about"
+              onClick={() => {
+                setIsNavExpanded(false);
+              }}
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              style={({ isActive }) => (isActive ? { color: "red" } : {})}
+              to="/contact"
+              onClick={() => {
+                setIsNavExpanded(false);
+              }}
+            >
+              Contact
+            </NavLink>
+          </li>
+        </ul>
+      </div>
     </nav>
-
-
-
-
-
-
-
-
-
-
-)
-
-
-
-
-
-
-
-
+  );
 }
 
-
-export default NavBar
+export default NavBar;
