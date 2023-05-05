@@ -57,7 +57,7 @@ function Search() {
   // topic options
 
   const topicOptions = [
-    { label: "news" },
+    { label: "news", value: "news" }, // added value to the first option
     { label: "sports", value: "sports" },
     { label: "technology", value: "tech" },
     { label: "world", value: "world" },
