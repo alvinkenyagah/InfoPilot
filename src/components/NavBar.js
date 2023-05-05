@@ -59,7 +59,7 @@ function NavBar() {
             </NavLink>
           </li>
           <li>
-            <NavLink
+            <NavLink 
               style={({ isActive }) => (isActive ? { color: "red" } : {})}
               to="/search"
               onClick={() => {

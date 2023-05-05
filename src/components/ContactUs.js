@@ -32,7 +32,7 @@ export  default function ContactUs(){
 <div style={{display:"flex"}}>
 <div id="contact-info" >
 
-<h1>How are you feeling today. <br/> Please feel free and share your thoughts or concerns with us</h1>
+<h1>How are you feeling today. <br/> Please feel free and share your thoughts or concerns with us.</h1>
 
 
 </div>
