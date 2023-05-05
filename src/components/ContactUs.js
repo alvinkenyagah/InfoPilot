@@ -32,7 +32,7 @@ export  default function ContactUs(){
 <div style={{display:"flex"}}>
 <div id="contact-info" >
 
-<h1>How are you feeling today. <br/> Please feel free and share your thoughts or concerns with us.</h1>
+<h1>How are you feeling today. <br/> Please feel free and share your feedback or concerns with us.</h1>
 
 
 </div>
@@ -54,7 +54,7 @@ export  default function ContactUs(){
             Email
           </label>
           <input className="form-control" type="email" name="email" placeholder="Email" required 
-          pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"/>
+          pattern='^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$'/>
         </div>
 
         <div className="mb-3">
