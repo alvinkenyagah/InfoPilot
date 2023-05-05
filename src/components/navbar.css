@@ -6,7 +6,7 @@
     align-items: center;
     position: relative;
     padding: 0.5rem 0rem;
-    background-color: #e92a4310;
+    background-color: #4d4f7210;
     color: black;
     box-shadow: 0 2px 2px 2px rgba(43, 42, 42, 0.23);
   }
@@ -76,7 +76,7 @@
       flex-direction: column;
       width: 100%;
       height: calc(100vh - 77px);
-      background-color: rgb(119, 48, 48);
+      background-color: #25252cf6;
       border-top: 1px solid black;
       
     }
