@@ -11,11 +11,8 @@ function Search() {
   const [country, setCountry] = useState("");
 
 
-
-  const minDate = new Date();
-  minDate.setDate(minDate.getDate() - 14);
-
-
+  const today = new Date();
+  const minDate = new Date(today.getTime() - (14 * 24 * 60 * 60 * 1000));
 
 
 
@@ -45,7 +42,7 @@ function Search() {
     if (language) url += `&lang=${language}`;
     if (topic) url += `&topic=${topic}`;
     if (date) url += `&date=${date}`;
-    if (country) 
+    
 
     fetch(url, {
       method: "GET",
@@ -66,7 +63,7 @@ function Search() {
   // topic options
 
   const topicOptions = [
-    { label: "news", value: "news" }, 
+    { label: "news", value: "news" }, // added value to the first option
     { label: "sports", value: "sport" },
     { label: "technology", value: "tech" },
     { label: "world", value: "world" },
@@ -187,20 +184,31 @@ const countyOptions =[
          ))}
        </select>
      </label>
+
+
 <br/>
 
 
-
-        
-        <input
+<input
         type="date"
         id="my-date-input"
         name="my-date-input"
         value={date}
-        min={minDate.toISOString().split("T")[0]} // Set the min date
+        min={minDate.toISOString().split("T")[0]}
+        max={new Date().toISOString().split("T")[0]} // Set the max date to today's date
         onChange={handleDateChange}
       />
+
+<br/>
+
+
+
         {/* <label>
+          Date:
+          <input type="text" value={date} onChange={handleDateChange} />
+        </label>
+
+        <label>
           Country:
           <input type="text" value={country} onChange={handleCountryChange} />
         </label> */}
