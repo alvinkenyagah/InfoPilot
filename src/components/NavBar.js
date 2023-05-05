@@ -70,6 +70,7 @@ function NavBar() {
             </NavLink>
           </li>
           <li>
+            
             <NavLink
               style={({ isActive }) => (isActive ? { color: "red" } : {})}
               to="/about"
