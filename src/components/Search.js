@@ -200,35 +200,28 @@ const countyOptions =[
       />
 
 <br/>
+<br/>
 
 
 
-        {/* <label>
-          Date:
-          <input type="text" value={date} onChange={handleDateChange} />
-        </label>
-
-        <label>
-          Country:
-          <input type="text" value={country} onChange={handleCountryChange} />
-        </label> */}
-
+  
 
         </div>
       </form>
-
+    <div className="new-content">
       {articles.map((article) => (
-        <div style={{display:"grid",gridTemplateColumns:"repeat(4, 1fr)"}}>
+        <div >
         <div key={article._id}>
           <img src={article.media} alt="2" style={{ width: "200px" }} />
           <h2>{article.title}</h2>
           <p>{article.summary}</p>
           <p>{article.published_date}</p>
           <p>{article.country}</p>
-          <a href={article.link} target="_blank" >Read more</a>
+          <a href={article.link}  rel="noopener" >Read more</a>
         </div>
         </div>
       ))}
+      </div>
     </div>
   );
 }

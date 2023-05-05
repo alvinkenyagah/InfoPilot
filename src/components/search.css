@@ -134,3 +134,51 @@ select::-ms-expand {
 }
 
 
+.new-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+
+}
+
+.new-content > div {
+
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 1rem;
+  background-color: #1040802c;
+}
+
+.new-content > div img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  
+}
+
+.new-content > div h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.new-content > div p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.new-content > div a {
+  background-color: #007bff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.new-content > div a:hover {
+  background-color: #0062cc;
+}
