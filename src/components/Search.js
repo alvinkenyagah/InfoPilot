@@ -7,12 +7,12 @@ function Search() {
 
   const [language, setLanguage] = useState("");
   const [topic, setTopic] = useState("");
-  const [date, setDate] = useState("");
-  const [country, setCountry] = useState("");
+  // const [date, setDate] = useState("");
+  // const [country, setCountry] = useState("");
 
 
-  const today = new Date();
-  const minDate = new Date(today.getTime() - (14 * 24 * 60 * 60 * 1000));
+  // const today = new Date();
+  // const minDate = new Date(today.getTime() - (14 * 24 * 60 * 60 * 1000));
 
 
 
@@ -28,20 +28,20 @@ function Search() {
     setTopic(event.target.value);
   };
 
-  const handleDateChange = (event) => {
-    setDate(event.target.value);
-  };
+  // const handleDateChange = (event) => {
+  //   setDate(event.target.value);
+  // };
 
-  const handleCountryChange = (event) => {
-    setCountry(event.target.value);
-  };
+  // const handleCountryChange = (event) => {
+  //   setCountry(event.target.value);
+  // };
 
   const handleSearchSubmit = (event) => {
     event.preventDefault();
     let url = `https://api.newscatcherapi.com/v2/search?q=${searchQuery}`;
     if (language) url += `&lang=${language}`;
-    if (topic) url += `&topic=${topic}`;
-    if (date) url += `&date=${date}`;
+    // if (topic) url += `&topic=${topic}`;
+    // if (date) url += `&date=${date}`;
     
 
     fetch(url, {
@@ -95,30 +95,30 @@ function Search() {
 
   ];
 
-const countyOptions =[
-  { label: "United States", value: "US" },
-  { label: "China", value: "CN" },
-  { label: "Japan", value: "JP" },
-  { label: "Germany", value: "DE" },
-  { label: "United Kingdom", value: "GB" },
-  { label: "India", value: "IN" },
-  { label: "France", value: "FR" },
-  { label: "Brazil", value: "BR" },
-  { label: "Italy", value: "IT" },
-  { label: "Canada", value: "CA" },
-  { label: "South Korea", value: "KR" },
-  { label: "Russia", value: "RU" },
-  { label: "Australia", value: "AU" },
-  { label: "Spain", value: "ES" },
-  { label: "Mexico", value: "MX" },
-  { label: "Indonesia", value: "ID" },
-  { label: "Turkey", value: "TR" },
-  { label: "Netherlands", value: "NL" },
-  { label: "Saudi Arabia", value: "SA" },
-  { label: "Switzerland", value: "CH" },
-  { label: "South Africa", value: "ZA" },
-  { label: "Kenya", value: "KE" }
-]
+// const countyOptions =[
+//   { label: "United States", value: "US" },
+//   { label: "China", value: "CN" },
+//   { label: "Japan", value: "JP" },
+//   { label: "Germany", value: "DE" },
+//   { label: "United Kingdom", value: "GB" },
+//   { label: "India", value: "IN" },
+//   { label: "France", value: "FR" },
+//   { label: "Brazil", value: "BR" },
+//   { label: "Italy", value: "IT" },
+//   { label: "Canada", value: "CA" },
+//   { label: "South Korea", value: "KR" },
+//   { label: "Russia", value: "RU" },
+//   { label: "Australia", value: "AU" },
+//   { label: "Spain", value: "ES" },
+//   { label: "Mexico", value: "MX" },
+//   { label: "Indonesia", value: "ID" },
+//   { label: "Turkey", value: "TR" },
+//   { label: "Netherlands", value: "NL" },
+//   { label: "Saudi Arabia", value: "SA" },
+//   { label: "Switzerland", value: "CH" },
+//   { label: "South Africa", value: "ZA" },
+//   { label: "Kenya", value: "KE" }
+// ]
 
 
   return (
@@ -175,21 +175,21 @@ const countyOptions =[
 
         <label className="select">
        
-       <select value={country} onChange={handleCountryChange}>
+       {/* <select value={country} onChange={handleCountryChange}>
          <option value="English">Countries</option>
          {countyOptions.map((option) => (
            <option key={option.value} value={option.value}>
              {option.label}
            </option>
          ))}
-       </select>
+       </select> */}
      </label>
 
 
 <br/>
 
 
-<input
+{/* <input
         type="date"
         id="my-date-input"
         name="my-date-input"
@@ -197,7 +197,7 @@ const countyOptions =[
         min={minDate.toISOString().split("T")[0]}
         max={new Date().toISOString().split("T")[0]} // Set the max date to today's date
         onChange={handleDateChange}
-      />
+      /> */}
 
 <br/>
 <br/>

@@ -19,7 +19,7 @@
 
 /* Team member container */
 .team-members {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   margin-top: 20px;
 }
