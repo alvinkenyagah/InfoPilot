@@ -15,7 +15,7 @@ My contact is alvin47k@gmail.com suppose you come across any challenges or would
 
 ## MIT License
 
-Copyright (c) 2023 alvinkenyagah.
+Copyright (c) 2023 alvinkenyagah
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
